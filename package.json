@@ -1,0 +1,66 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "standard": "standard",
+    "test": "react-app-rewired test --watchAll=false",
+    "test:coverage": "react-app-rewired test --watchAll=false --coverage"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-scripts": "3.4.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.11.0",
+    "@testing-library/react": "10.4.5",
+    "@testing-library/user-event": "12.0.11",
+    "babel-plugin-root-import": "6.5.0",
+    "customize-cra": "1.0.0",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "eslint-config-standard-react": "9.2.0",
+    "jest-enzyme": "7.1.2",
+    "react-app-rewired": "2.1.6",
+    "standard": "14.3.4"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!/node_modules/",
+      "!src/index.js",
+      "!src/setupTests.js",
+      "!src/serviceWorker.js"
+    ]
+  },
+  "standard": {
+    "ignore": [],
+    "globals": [
+      "describe",
+      "it",
+      "test",
+      "fit",
+      "expect",
+      "beforeAll",
+      "afterAll",
+      "beforeEach",
+      "afterEach",
+      "jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
